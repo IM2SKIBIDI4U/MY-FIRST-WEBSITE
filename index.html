@@ -84,12 +84,12 @@
 </head>
 <body>
 
-<h1>Rafay's Multi-Tool Hub 🛠️</h1>
+<h1>A Useful Website</h1>
 <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
 
 <!-- Password Generator -->
 <section>
-  <h2>Password Generator 🔐</h2>
+  <h2>Password Generator </h2>
   <label>Length: <input type="number" id="pwLength" min="4" max="32" value="12"></label><br>
   <label><input type="checkbox" id="pwLower" checked> Lowercase</label>
   <label><input type="checkbox" id="pwUpper" checked> Uppercase</label>
@@ -104,7 +104,7 @@
 
 <!-- Calculator -->
 <section>
-  <h2>Calculator 🧮</h2>
+  <h2>Calculator </h2>
   <input type="number" id="calcNum1" placeholder="Number 1">
   <input type="number" id="calcNum2" placeholder="Number 2">
   <br>
@@ -117,7 +117,7 @@
 
 <!-- Name Greeter -->
 <section>
-  <h2>Name Greeter 🙋</h2>
+  <h2>Name Greeter </h2>
   <input type="text" id="nameInput" placeholder="Enter your name">
   <button onclick="greetName()">Greet Me</button>
   <p id="greetResult"></p>
@@ -125,14 +125,14 @@
 
 <!-- Coin Flipper -->
 <section>
-  <h2>Coin Flipper 🪙</h2>
+  <h2>Coin Flipper </h2>
   <button onclick="flipCoin()">Flip Coin</button>
   <p id="coinResult"></p>
 </section>
 
 <!-- Spin Wheel / Random Choice -->
 <section>
-  <h2>Spin Wheel / Random Choice 🎡</h2>
+  <h2>Spin Wheel / Random Choice </h2>
   <input type="text" id="spinInput" placeholder="Enter options, comma separated">
   <button onclick="spinWheel()">Spin</button>
   <p id="spinResult"></p>
@@ -209,7 +209,7 @@ function greetName(){
 
 /* ---------------- Coin Flipper ---------------- */
 function flipCoin(){
-  let result = Math.random() < 0.5 ? "🪙 Heads" : "🪙 Tails";
+  let result = Math.random() < 0.5 ? " Heads" : " Tails";
   document.getElementById("coinResult").innerText = result;
 }
 
@@ -220,7 +220,7 @@ function spinWheel(){
   let options = input.split(",").map(o=>o.trim()).filter(o=>o);
   if(options.length===0){alert("No valid options!"); return;}
   let choice = options[Math.floor(Math.random()*options.length)];
-  document.getElementById("spinResult").innerText = "🎯 Selected: "+choice;
+  document.getElementById("spinResult").innerText = " Selected: "+choice;
 }
 
 /* ---------------- Dark/Light Mode ---------------- */
